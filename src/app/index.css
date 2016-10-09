@@ -1,3 +1,12 @@
+body {
+  overflow-x: hidden !important;
+}
+
+.container {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -213,31 +222,24 @@
   padding: 40px 0 0 0;
 }
 
-#container {
-  display: table;
-  width: 100%;
-}
-
-.item {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  padding: 84px 0 0 0;
-}
-
-.item a {
-  margin-top: 44px;
-}
-
-.item-icon{
- /* width: 80px;
+.circle-body {
+  width: 80px;
   height: 80px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  border: solid 2px #f4f4f4;*/
+  margin: 0 auto 14px auto;
+  border: 5px solid #f4f4f4;
+  border-radius: 100%;
+  background-color: #FFFFFF;
 }
 
-.item h4 {
+.icon-set {
+  padding-top: 20%;
+}
+
+.main-low-margin {
+  margin-top: 55px;
+}
+
+.item p, .item h3 {
   font-family: freight-sans-pro;
   font-size: 16px;
   font-weight: normal;
@@ -255,7 +257,7 @@
   /*z-index: 10;*/
 }
 
-.middle{
+.middle {
   float: none;
   margin: 0 auto;
 }
@@ -264,9 +266,11 @@
   height: 0;
   padding: 0;
 }
+
 .hr.big_size_hr {
   margin: 30px 0;
 }
+
 .hr {
   clear: both;
   display: block;
@@ -279,11 +283,42 @@
   text-align: center;
   width: 100%;
 }
+
 .highlight_secondary {
   color: #F24046;
 }
+
+.team-name h5{
+  font-family: freight-sans-pro,sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  text-align: center;
+}
+
 .team-role {
-  color: #A4A7AA;
+  font-family: freight-sans-pro,sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  text-align: center;
+  color: #acacac;
+  margin-top: -10px;
+}
+
+.team-links-list a i{
+  color: #acacac;
+  font-size: 12px;
+}
+.im-centered {
+  margin-left: 22%;
+}
+.team-image a img{
+  width: 450px;
 }
 
 /*--section4--*/
@@ -313,14 +348,82 @@
   padding: 0 40px 0 40px
 }
 
-
 /*--section5--*/
 .section5 {
   height: 576px;
   background-color: #ffffff;
   box-shadow: 0 1px 0 0 #d8d8d8;
   position: relative;
-  z-index: 10;
+  z-index: 5;
+}
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+
+.btn-centered-2 {
+  text-align: center;
+}
+
+.floating-label-form-group {
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: .1em;
+  border-bottom: 0px solid #eee;
+}
+
+.floating-label-form-group input,
+.floating-label-form-group textarea {
+  font-family: freight-sans-pro,sans-serif;
+  z-index: 1;
+  position: relative;
+  padding-right: 0;
+  padding-left: 20px;
+  border: 0;
+  border-radius: 0;
+  font-size: 1.5em;
+  background: 0 0;
+  box-shadow: none !important;
+  resize: none;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  color: black;
+}
+
+.floating-label-form-group select {
+  font-family: freight-sans-pro,sans-serif;
+  z-index: 1;
+  position: relative;
+  padding-right: 0;
+  padding-left: 20px;
+  border: 0;
+  border-radius: 0;
+  font-size: 1.5em;
+  background: 0 0;
+  box-shadow: none !important;
+  resize: none;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  color: black;
+}
+
+
+.floating-label-form-group label {
+  display: block;
+  z-index: 0;
+  position: relative;
+  top: 2em;
+  margin: 0;
+  font-size: .85em;
+  line-height: 1.764705882em;
+  vertical-align: middle;
+  vertical-align: baseline;
+  opacity: 0;
+  -webkit-transition: top .3s ease, opacity .3s ease;
+  -moz-transition: top .3s ease, opacity .3s ease;
+  -ms-transition: top .3s ease, opacity .3s ease;
+  transition: top .3s ease, opacity .3s ease;
 }
 
 /*--footer--*/
@@ -331,12 +434,13 @@
   position: relative;
 }
 
-.section-top-logo{
+.section-top-logo {
   text-align: center;
   padding: 40px 0 0 0;
 }
-.section-top-logo a{
-  font-family: sourcecode-pro;
+
+.section-top-logo a {
+  font-family: 'Source Code Pro', monospace;
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
@@ -346,6 +450,22 @@
   color: #000000;
   text-decoration: none;
 }
+
 .section-top-logo a span {
   color: #fc5c5d;
 }
+
+/*Media Queries*/
+
+@media (min-width: 768px) {
+  #wrapper {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  #wrapper {
+    width: 100%;
+  }
+}
+

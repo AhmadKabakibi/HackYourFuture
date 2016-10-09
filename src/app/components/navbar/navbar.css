@@ -47,8 +47,8 @@
 }
 
 #logo a{
- font-family: SourceCodePro;
-  /*font-family: Effra;*/
+  /* font-family: SourceCodePro;*/
+  font-family: Effra;
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
@@ -114,4 +114,17 @@
 
 #navigation li.active a {
   color: #fc5c5d;
+}
+
+
+@media (min-width: 768px) {
+  #header{
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  #header{
+    width: 100%;
+  }
 }
